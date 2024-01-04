@@ -28,32 +28,27 @@
       fit
       highlight-current-row
     >
-      <el-table-column align="center" label="ID" width="95">
-        <template slot-scope="scope">
-          {{ scope.$index }}
-        </template>
-      </el-table-column>
       <el-table-column label="车次" align="center">
         <template slot-scope="scope">
           {{ scope.row.trainNo }}
         </template>
       </el-table-column>
-      <el-table-column label="车站名" width="110" align="center">
+      <el-table-column label="车站名" width="180" align="center">
         <template slot-scope="scope">
           <span>{{ scope.row.stationName }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="到站时间" width="110" align="center">
+      <el-table-column label="到站时间" width="180" align="center">
         <template slot-scope="scope">
           {{ scope.row.arriveTime }}
         </template>
       </el-table-column>
-      <el-table-column label="离站时间" width="110" align="center">
+      <el-table-column label="离站时间" width="180" align="center">
         <template slot-scope="scope">
           {{ scope.row.leaveTime }}
         </template>
       </el-table-column>
-      <el-table-column label="站点次序" width="110" align="center">
+      <el-table-column label="站点次序" width="180" align="center">
         <template slot-scope="scope">
           {{ scope.row.stationOrder }}
         </template>

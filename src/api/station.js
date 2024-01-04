@@ -22,3 +22,10 @@ export function searchStation(start_station, end_station) {
     params: { start_station, end_station }
   })
 }
+export function findStation(start_station, end_station) {
+  return request({
+    url: '/station/find',
+    method: 'get',
+    params: { start_station, end_station }
+  })
+}
